@@ -51,6 +51,8 @@ export default class MyForm extends React.Component {
         event.preventDefault();
         console.log(this.state);
     };
+
+    
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
