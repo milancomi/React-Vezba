@@ -4,6 +4,8 @@ import ValidationForm from "./components/ValidationForm";
 import Login from "./components/validationTest";
 import FetchRandomUser from "./components/FetchRandomUser";
 import Counter from "./components/Counter";
+import MyForm from "./components/MyForm";
+import ImageSlider from "./components/ImageSlider";
 
 class App extends Component {
   state = {
@@ -34,12 +36,16 @@ class App extends Component {
           dodaj={this.dodaj}
           oduzmi={this.oduzmi}
         />
-        <Counter
-          count={this.state.count}
-          dodaj={this.dodaj}
-          oduzmi={this.oduzmi}
-        />
+<div>
+<ValidationForm
+/>
+</div>
+      <div><MyForm/></div>
+      <div>
+<FetchRandomUser />
+</div>
       </div>
+
     );
   }
 }
